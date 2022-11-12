@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Oranienbaum&family=Roboto:wght@300;400;500;700;900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.text-title {
+  font-family: "Oranienbaum", serif;
+}
+
+.text-gold {
+  color: rgb(209, 193, 115);
+}
+
+.text-paragraph {
+  color: rgb(74, 74, 74);
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-lg {
+  font-size: 1.3em;
+}
+
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+.container__inner {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.table-warning,
+.table-warning > td,
+.table-warning > th {
+  background-color: #ffda67;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #ffbc12;
+}
+
+.table-warning tbody + tbody,
+.table-warning td,
+.table-warning th,
+.table-warning thead th {
+  border: 1px solid #ffbc12;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+#header {
+  background-image: url("../img/bg-main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+  z-index: 3;
+}
+
+#about .about__badge {
+  rotate: -35deg;
+  left: -30%;
+  top: 3em;
+  width: 600px;
+  z-index: 1;
+}
+
+#girl {
+  position: relative;
+  z-index: 3;
+}
+#girl img {
+  width: 100%;
+}
+#girl .girl__desc {
+  font-size: 0.8em;
+}
+
+.amount {
+  position: relative;
+  font-size: 1.2em;
+}
+.amount:before {
+  content: " ";
+  width: 4em;
+  display: block;
+  border-top: 2px solid rgba(255, 1, 77, 0.8);
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(-7deg) translate(-50%, -50%);
+}
+
+#pockets .card {
+  transition: all 0.2s ease-in-out;
+  height: 500px !important;
+}
+#pockets .card:hover {
+  box-shadow: 1px -1px 22px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px -1px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px -1px 22px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 768px) {
+  #pockets .card {
+    height: 350px;
+  }
+  .container__inner {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
